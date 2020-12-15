@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import DataService from "../services/service";
 import { Link } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
+import NewsService from "../services/News.service";
 
 export const ListNewsByReporter = () => {
   const [news, setNews] = useState([]);
@@ -14,7 +14,7 @@ export const ListNewsByReporter = () => {
   }, []);
 
   const retrieveNews = () => {
-    DataService.findAllNewsbyReporter()
+    NewsService.findAllNewsbyReporter()
       .then((response) => {
         setNews(response.data);
         console.log(response.data);

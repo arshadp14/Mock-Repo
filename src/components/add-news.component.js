@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import DataService from "../services/service";
 import Axios from "axios";
+import NewsService from "../services/News.service";
 
 export default class AddNews extends Component {
   constructor(props) {
@@ -81,7 +81,7 @@ export default class AddNews extends Component {
       published: false,
     };
 
-    DataService.createNews(data)
+    NewsService.createNews(data)
       .then(() => {
         console.log("Created new item successfully!");
         this.setState({

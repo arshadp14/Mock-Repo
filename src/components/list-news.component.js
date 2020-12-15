@@ -152,9 +152,9 @@
 // export default ListTutorials;
 
 import React, { useState, useEffect } from "react";
-import DataService from "../services/service";
 import { Link } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
+import NewsService from "../services/News.service";
 
 export const ListNews = () => {
   const [news, setNews] = useState([]);
@@ -172,7 +172,7 @@ export const ListNews = () => {
   //   };
 
   const retrieveNews = () => {
-    DataService.findAllNewsByCity()
+    NewsService.findAllNewsByCity()
       .then((response) => {
         setNews(response.data);
         console.log(response.data);
