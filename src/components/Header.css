@@ -1,0 +1,19 @@
+header{
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.head{
+    display: flex;
+}
+
+.icon{
+    margin-left: 2%;
+}
+.heading{
+    margin-left: 40%;
+}
