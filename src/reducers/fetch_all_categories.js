@@ -7,12 +7,6 @@ const fetchAllCategories= (state={allcategories:[]}, action)=>{
                 allcategories: action.payload
                 
             };
-    
-        // case "FILTER_NEWS_BY_CITY":
-        //     return {
-        //         ...state,
-        //         newByCity: action.payload
-        //     }
         default:
             return state
 

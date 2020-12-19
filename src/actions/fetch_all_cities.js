@@ -7,7 +7,7 @@ export function fetchAllCities() {
       .then((res) => {
         let data = res.data;
         dispatch({ type: FETCH_All_CITIES, payload: data });
-        console.log("From action" + data);
+        
         return data;
       })
 

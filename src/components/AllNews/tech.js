@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchTech } from "../actions/fetch_tech";
-import CardUI from './cardUI';
+import { fetchTech } from "../../actions/fetch_tech";
+import CardUI from './Layout/cardUI';
 
 const Tech = () => {
     

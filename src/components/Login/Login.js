@@ -161,7 +161,7 @@ export class Login extends React.Component {
                   </div>
                   <div id="register-link" className="text-left">
                     Not a registered reporter?{" "}
-                    <Link to={`/adduser`}>Apply Here</Link>
+                    <Link to={`/register`}>Apply Here</Link>
                   </div>
                 </form>
               </div>

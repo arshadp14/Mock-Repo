@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+.backgroundImage {
+	background-image: url('../../assests/registerUserBackground.jpg');
+	background-color: #303952;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 2%;
+}
+
+label {
+	font-weight: 400;
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0px 0px;
+	font-size: 0.9em;
+}
+
+.form-control {
+	border: none;
+	border-radius: 0;
+	border-bottom: 1.2px solid grey;
+	border-spacing: 0;
+	font-weight: bold;
+	outline: none;
+	box-shadow: none !important;
+}
+small {
+	color: grey;
+}
+.signUpForm {
+	width: 30%;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 57%;
+	background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.signUpForm {
+		width: 100%;
+		padding: 5px;
+		margin: 0;
+		border-radius: 0;
+	}
+	.backgroundImage {
+		padding: 0;
+	}
+}
+
+.error {
+	color: red;
+}
+
+.eyeSpan {
+	float: right;
+	margin-right: 6px;
+	margin-top: -40px;
+	position: relative;
+	z-index: 2;
+}

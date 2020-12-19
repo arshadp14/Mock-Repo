@@ -8,7 +8,7 @@ import  fetchAllCategories from "../reducers/fetch_all_categories";
 
 
 //combine reducers
-//remember you need to export the reducers to use them
+//export the reducers to use them
 const reducers= combineReducers({
     FetchTech: fetchTech,
     CustomSearch: customSearch,

@@ -8,7 +8,7 @@ export function fetchAllStates(){
             .then(res => {
                 let data = res.data;
                 dispatch({type:FETCH_All_STATES, payload: data});
-                console.log("From action"+data);
+               
                  return data;
                 
                 

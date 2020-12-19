@@ -8,10 +8,7 @@ export function fetchAllCategories(){
             .then(res => {
                 let data = res.data;
                 dispatch({type:FETCH_All_CATEGORIES, payload: data});
-                console.log("From action"+data);
                  return data;
-                
-                
             })
        
             .catch(err => {

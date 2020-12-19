@@ -17,6 +17,10 @@ class DataService {
     return http.get("/categories");
   }
 
+  getNewsById(id){
+    return http.post('/news/getnews',id);
+  }
+
   createNews(data) {
     console.log(data);
     return http.post("/news", data);
@@ -51,9 +55,22 @@ class DataService {
     return http.get("/categories");
   }
 
-  updateCount(id) {
-    return http.put(`main/${id}`);
+  updateCount(id){
+    console.log(id);
+    return http.post(`/news/update/`,id);
   }
+  
+  getAllReportCategory(){
+    return http.get("/reportcategory")
+  }
+//----------------User Registration by Neeraj Gole------------------------
+checkIfUserMailExist(mail) {
+  return http.post("/users/checkmail", mail);
+}
+
+createUser(data) {
+  return http.post('/users', data);
+}
 }
 
 export default new DataService();

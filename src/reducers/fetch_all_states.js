@@ -7,12 +7,6 @@ const fetchAllStates= (state={allstates:[]}, action)=>{
                 allstates: action.payload
                 
             };
-    
-        // case "FILTER_NEWS_BY_CITY":
-        //     return {
-        //         ...state,
-        //         newByCity: action.payload
-        //     }
         default:
             return state
 

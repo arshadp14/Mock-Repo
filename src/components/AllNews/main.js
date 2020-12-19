@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 //redux hooks
 //import the action
 // import { useSelector, useDispatch } from "react-redux";
-import { fetchCustomNews } from "../actions/fetch_custom_news";
+import { fetchCustomNews } from "../../actions/fetch_custom_news";
 import { useSelector, useDispatch } from "react-redux";
+import "../AllNews/Layout/styleSheet.css"
 
 const Main = () => {
   //news sources
@@ -54,13 +55,13 @@ const Main = () => {
   let news;
   if (customNewsSelector.customNews.length > 0) {
     news = (
-      <div className="news">
+      <div className="newsc">
         {customNewsSelector.customNews.map((x) => {
           return (
-            <div className="post" key={x.title}>
-              <img src={x.urlToImage} alt={x.title} />
+            <div className="postc" key={x.title}>
+              <img className="imgc" src={x.urlToImage} alt={x.title} />
               <h2>{x.title}</h2>
-              <p>{x.description}</p>
+              <p className="extractc">{x.description}</p>
             </div>
           );
         })}
