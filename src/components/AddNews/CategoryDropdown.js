@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DataService from "../services/service";
+import DataService from "../../services/service";
 
 const CategoryDropDown = ({ getValue }) => {
   //   const [states, setStates] = useState([]);

@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import { Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import DataService from "../services/service";
+import DataService from "../../services/service";
 
 import { Link } from "react-router-dom";
 
@@ -49,6 +49,8 @@ export class Login extends React.Component {
         console.log(data);
         let user = data.data;
         let status = "Approved";
+        let userId = user[0].user_id;
+        let cityId = user[0].city_id;
         console.log(user[0].password);
         if (user[0].role !== "Admin") {
           if (
@@ -60,6 +62,8 @@ export class Login extends React.Component {
               redirectToReporter: !this.state.redirectToReporter,
             });
             sessionStorage.setItem("email", email);
+            sessionStorage.setItem("userId", userId);
+            sessionStorage.setItem("city", cityId);
             alert("login successfull");
           } else if (email !== user[0].email || password !== user[0].password) {
             alert("Invalid username or password!!!");

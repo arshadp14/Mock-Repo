@@ -7,14 +7,14 @@ import SearchByCategories from "./components/SearchByCategories";
 import Tech from "./components/tech";
 import AllNews from "./components/AllNews";
 
-import ListNews from "./components/list-news.component";
-import { ListNewsByReporter } from "./components/list-reporter.component";
-import NewsAdd from "./components/addnews";
-import { Login } from "./components/Login";
-import { NewPassword } from "./components/New_Password";
-import { ForgotPassword } from "./components/Forgot_Password";
+import ListNews from "./components/ReporterNews/ReporterCityNews";
+import { ListNewsByReporter } from "./components/ReporterNews/ReporterNews";
+import NewsAdd from "./components/AddNews/AddNews";
+import { Login } from "./components/Login/Login";
+import { NewPassword } from "./components/Password/New_Password";
+import { ForgotPassword } from "./components/Password/Forgot_Password";
 
-import { ReporterComponent } from "./components/rep.component";
+import { ReporterComponent } from "./components/ReporterDashboard/ReporterDashboard";
 import { Provider } from "react-redux";
 import Store from "./store/store";
 import SearchByCity from "./components/SearchByCity";

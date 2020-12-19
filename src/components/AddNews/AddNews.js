@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import DataService from "../services/service";
-import CategoryDropDown from "./categorydropdown.component";
+import DataService from "../../services/service";
+
+import CategoryDropDown from "./CategoryDropdown";
 import { Container } from "react-bootstrap";
 import "./addnews.css";
 
 const NewsAdd = () => {
+  const cityId = sessionStorage.getItem("city");
+  console.log(cityId);
+
   const initialNewsState = {
     city_id: null,
     user_id: null,
@@ -38,7 +42,7 @@ const NewsAdd = () => {
 
   const saveNews = () => {
     const formdata = new FormData();
-    formdata.append("city_id", 1);
+    formdata.append("city_id", cityId);
     formdata.append("user_id", 1);
     formdata.append("category_id", catId);
     formdata.append("title", news.title);

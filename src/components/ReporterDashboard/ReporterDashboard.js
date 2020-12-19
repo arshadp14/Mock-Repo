@@ -1,7 +1,7 @@
 import React from "react";
-import NewsAdd from "./addnews";
-import { ListNewsByReporter } from "./list-reporter.component";
-import { ListNews } from "./list-news.component";
+// import NewsAdd from "../AddNews/addnews";
+// import { ListNewsByReporter } from "../ReporterNews/list-reporter.component";
+// import { ListNews } from "../ReporterNews/list-news.component";
 import { Link, Route } from "react-router-dom";
 import "./reporter.css";
 import Axios from "axios";

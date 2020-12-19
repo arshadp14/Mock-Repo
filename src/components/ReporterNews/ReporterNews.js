@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import DataService from "../services/service";
+
+import DataService from "../../services/service";
 import { Link } from "react-router-dom";
-import "./list-reporter.css";
+import "./reporter_news.css";
 import { Button, Card } from "react-bootstrap";
 
 export const ListNewsByReporter = () => {

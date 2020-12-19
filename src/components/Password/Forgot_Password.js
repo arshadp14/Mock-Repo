@@ -1,8 +1,9 @@
 import React from "react";
-import "./Login.css";
+// import "./Login.css";
+import "../Login/Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Redirect } from "react-router-dom";
-import DataService from "../services/service";
+import DataService from "../../services/service";
 
 export class ForgotPassword extends React.Component {
   constructor(props) {
