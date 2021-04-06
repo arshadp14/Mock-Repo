@@ -7,7 +7,7 @@ export class Home extends React.Component{
     render(){
         return(
             <Container>
-               Why I am so smart!!!
+              Neeraj is so smart!!!
             </Container>
         )
     }
